@@ -1,0 +1,14 @@
+-> Table Product
+============================
+create table product
+(
+product_id number(5) primary key,
+product_name varchar2(25) not null,
+product_price int check(product_price > 0),
+product_qty int check(product_qty > 0),
+product_category varchar2(10) default 'books'
+);
+
+
+
+
