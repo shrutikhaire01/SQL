@@ -1,0 +1,34 @@
+=============
+constraint
+=============
+
+create table dept
+(
+dept_num number(4) constraint dept_dept_num_pk primary key,
+dept_name varchar2(20) not null,
+loc varchar2(10)
+);
+
+Table created.
+
+-------------------------------------------------------------------------------------
+
+
+SQL> insert into dept values(10,'Dev','Pune');
+
+1 row created.
+
+SQL>
+
+-------------------------------------------------------------------------------------
+
+
+SQL> select * from dept;
+
+  DEPT_NUM DEPT_NAME            LOC
+---------- -------------------- ----------
+        10 Dev                  Pune
+
+
+-------------------------------------------------------------------------------------
+
