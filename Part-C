@@ -32,3 +32,28 @@ SQL> select * from dept;
 
 -------------------------------------------------------------------------------------
 
+create table employee
+(
+emp_id number(7) constraint emp_id_pk primary key,
+emp_name varchar2(20) not null,
+dept_no number(4) REFERENCES dept(dept_num)
+);
+
+
+Table created.
+
+SQL> insert into employee values(101,'Suresh',10);
+
+1 row created.
+
+SQL> select * from employee;
+
+    EMP_ID EMP_NAME                DEPT_NO
+---------- -------------------- ----------
+       101 Suresh                       10
+
+-------------------------------------------------------------------------------------
+
+
+
+
