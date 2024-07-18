@@ -1,1 +1,65 @@
+=====================
+-> TABLE MEMEBER
+=====================
+
+create table Member 
+(
+Member_Id number(5) primary key,
+Member_Name Varchar2(30),
+Member_address Varchar2(50),
+Acc_Open_Date date,
+Membership_type Varchar2(20),
+Fees_paid Number(4) not null,
+Max_Books_Allowed Number(2),
+Penalty_Amount Number(7,2)
+);
+
+SQL> insert into Member values (1, 'Richa', 'Pune','11-Dec-05', 'Lifetime', 2000, 5, 100.00);
+
+1 row created.
+
+SQL> insert into Member values (2, 'Seeta', 'Mumbai','14-Dec-05', 'Annual', 1000, 2, 50.00);
+
+1 row created.
+
+SQL> insert into Member values (3, 'Geeta', 'Amaravati','17-Dec-05', 'Half Yearly', 500, 2, 20.00);
+
+1 row created.
+
+SQL> insert into Member values (4, 'Neeta', 'Latur','19-Dec-05', 'Quarterly', 300, 2, 10.00);
+
+1 row created.
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+===========
+BOOKS
+==========
+
+create table Books
+(
+Book_No Number(6),
+Book_Name VarChar2(30),
+Author_name Varchar2(30),
+Cost Number(7,2),
+Category Char(10)
+);
+
+
+
+SQL> insert into Books Values(101,'Java','ABC',60,'coding');
+
+1 row created.
+
+SQL> insert into Books Values(101,'Python','PQR',20,'pcoding');
+
+1 row created.
+
+SQL> insert into Books Values(101,'Wings','XYZ',40,'fiction');
+
+1 row created.
+
+----------------------------------------------------------------------------------------------------------------------
 
