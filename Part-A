@@ -15,3 +15,20 @@ SQL> create table student
 Table created.
 
 --------------------------------------------------------------------------------------
+
+
+=======
+Insert
+=======
+
+-> insert into student values(1,'Ganesh','11-jan-99',default,99.1);
+
+1 row created.
+
+-> SQL> select * from student;
+
+ROLLNUMBER FIRST_NAME           DOB       GR      PERCT
+---------- -------------------- --------- -- ----------
+         1 Ganesh               11-JAN-99 A        99.1
+
+--------------------------------------------------------------------------------------
